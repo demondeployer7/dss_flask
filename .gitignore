@@ -1,0 +1,4 @@
+.env
+venv
+reco_cleaner.ipynb
+json_converter.ipynb
