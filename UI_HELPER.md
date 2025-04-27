@@ -47,17 +47,29 @@
 
 ## class UserReview
 
-
+```
 4 matched_interests -->  The items recommended to group matched my interests
+
 5 discovered_new_items --> The recommender system helped me discover new items
+
 6 diverse_recommendations --> The items recommended to group are diverse
+
 7 easy_to_find --> I easily found the recommended items
+
 8 ideal_item_found --> The recommender helped me find the ideal item while hanging out in a group
+
 9 overall_satisfaction --> Overall, I am satisfied with the recommender
+
 10 confidence_in_decision --> The recommender made me more confident about my selection/decision when dining out in a group
+
 11 would_buy_recommendations --> I would try the items recommended, given the opportunity when hanging out in a group
+
 12 good_group_suggestions --> The recommender gave me good suggestions for hanging out in group
+
 13 convinced_of_items --> I am convinced of the items recommended to me
+
 14 confident_will_like --> I am confident I will like the items recommended to me
+
 15 trust_in_recommender --> The recommender can be trusted
 
+```
