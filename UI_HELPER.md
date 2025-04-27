@@ -1,34 +1,49 @@
 ## class UserResponse
 
 1. preferred_cuisine --> Which type of cuisine do you usually prefer when eating out?
+```
 ["None of the below", "Mexican", "African", "Latin", "Italian", "Soul", "Tex", "Mex", "Japanese", "Thai", "Asian", 
                 "Chinese", "Southern", "Cajun", "Creole", "Pakistani", "Indian", "Korean", "Vietnamese", 
                 "Greek", "Mediterranean", "Hawaiian", "Caribbean", "Cantonese", "Szechuan", "Eastern", 
                 "Middle", "American"]
+```
 
 2. usual_eating_time--> When do you typically enjoy eating outside?
+```
 ["Breakfast", "Brunch", "Nightlife","Lunch"]
-
+```
 3. preferred_place--> What type of place do you usually prefer when eating out?
+```
 ["Restaurants", "Bars", "Cafes", "Diners", "Pubs", "Lounges", "Buffets", 
                 "Street Food Stalls"]
+```
 
 4. main_course--> Which of the following food combinations do you most often go for when eating out?
+```
 ["None of the below", "Burgers and Pizza", "Pizza and Wings", "Noodles and Ramen", "Sushi and Ramen",
                 "Soup and Sandwiches", "Chicken and Salad", "Tacos and Chips", "Fish and Chips",
                 "Cheesesteaks and Chips", "Poke and Salad", "Soup and Noodles"]
+```
+
 5. extra_treat--> What's your go-to extra treat when eating out?
+```
 ["None of the below", "Bagels and Juice", "Smoothies and Bagels", "Yogurt and Smoothies", "Desserts"]
+```
 
 6. drink_choice--> What's your usual drink of choice when dining out?
+```
 ["None of the below", "Cocktail", "Beer", "Juice", "Wine"]
+```
 
 7. comfort_sip--> When it's time for a quick break, what's your sip of comfort?
+```
 ["None of the below", "Coffee", "Tea"]
+```
 
 8. dietary_preference  --> What's your dietary preference when eating out?
+```
 ["Vegan", "Vegetarian", "Non-Vegetarian", "No Preference"]
-
+```
 
 ## class UserReview
 
