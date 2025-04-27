@@ -28,7 +28,6 @@ with open('Dominant_Categories.json', 'r') as f:
     Dominant_Categories = json.load(f)
 
 # Load group vectors for both group sizes
-group_vectors = {}
 group_vectors_5 = {}
 group_vectors_8 = {}
 
@@ -66,15 +65,7 @@ def cosine_similarity(vec1, vec2):
         return 0
     return dot / (norm1 * norm2)
 
-def find_most_similar_group(input_vector):
-    max_sim = -1
-    best_match = None
-    for idx, group_vec in group_vectors.items():
-        sim = cosine_similarity(input_vector, group_vec)
-        if sim > max_sim:
-            max_sim = sim
-            best_match = idx
-    return best_match, max_sim
+
 
 def get_group_preferences(group_id):
     group_responses = UserResponse.query.filter_by(group_id=group_id).all()
@@ -216,7 +207,7 @@ def submit_review():
     
     data = request.get_json()
     required_fields = [
-        'top_3_recommendations', 'matched_interests', 'discovered_new_items',
+        'matched_interests', 'discovered_new_items',
         'diverse_recommendations', 'easy_to_find', 'ideal_item_found',
         'overall_satisfaction', 'confidence_in_decision', 'would_buy_recommendations',
         'good_group_suggestions', 'convinced_of_items', 'confident_will_like',
