@@ -83,7 +83,7 @@ def get_group_preferences(group_id):
     for response in group_responses:
         user_preferences = []
         preference_fields = [
-            'preferred_cuisine', 'usual_eating_time', 'preferred_place',
+            'preferred_cuisine', 'preferred_place',
             'main_course', 'extra_treat', 'drink_choice', 'comfort_sip'
         ]
         
@@ -99,6 +99,8 @@ def get_group_preferences(group_id):
                     
         if response.dietary_preference not in ["Non-Vegetarian", "No Preference"]:
             user_preferences.append(response.dietary_preference)
+        if response.usual_eating_time not in ["Lunch"]:
+            user_preferences.append(response.usual_eating_time)
             
         processed_preferences.extend(user_preferences)
     
